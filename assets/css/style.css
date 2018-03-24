@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+    background: url("../images/plate.png")
+}
+
+.jumbotron {
+  color: antiquewhite;
+  background-color: darkgrey
+}
