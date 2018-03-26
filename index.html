@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <title>Trivia Game</title>
 </head>
 <body>
-       <div class="jumbotron" id="x">
+        <div id="overlay">
+            <div id="overlayText">TIME IS UP</div>
+        </div>
+       <div class="jumbotron" id="intro">
            <h1 class="display-3">TRIVIA TRIVIA</h1>
-              <p class="lead">Let's See how much you know about GUNS</p>
+              <p class="lead">Find out how much you know about AR-15</p>
            <hr class="my-4">
-              <p>You have 2 minutes to answear 10 questions in this trivia game<p> It might help you understand weapon systems better</p>
+              <p>You have 1 minutes to answear 10 questions<p> Timer will begins when you click the "Start" button</p>
                <p class="lead">
                  <abutton id="start" class="btn btn-primary btn-lg" href="#" >START</button>
         </p>
     </div>
     
-    <div id="action"></div>
+    <div id="action">
+
+        <div  id="question">
+            <h2>Question here</h2>
+            </div>
+        
+            <div class="options">
+                <button id="btn1"><span id="option1"></span></button>
+                <button id="btn2"><span id="option2"></span></button>
+                <button id="btn3"><span id="option3"></span></button>
+                <button id="btn4"><span id="option4"></span></button>
+            </div>
+
+    </div>
+ 
 </body>
 
 </html>
+<script src="assets/javascript/questions.js"></script>
+<script src="assets/javascript/app.js"></script>
