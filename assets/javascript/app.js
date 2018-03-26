@@ -8,12 +8,14 @@ $("#action").show("#action");
 //count down timer // 
 var windowTimeout = setTimeout(function() {
   $("#overlay").show("#overlay");
-      }, 60000);
+      }, 1000);
 });
 
 // add on click event to reset the game // 
-$("#overlay").click(function (){
-  $("#into").show$("#into");
+$("#restart").click(function (){
+  $("#overlay").hide("#overlay");
+  $("#action").hide("#action");
+  $("#intro").show("#intro");
 });
 
 var currentQuestion;
