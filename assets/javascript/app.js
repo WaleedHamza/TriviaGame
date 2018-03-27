@@ -8,27 +8,49 @@ $("#action").show("#action");
 //count down timer // 
 var windowTimeout = setTimeout(function() {
   $("#overlay").show("#overlay");
-      }, 1000);
+      }, 120000);
 });
 
-// add on click event to reset the game // 
-$("#restart").click(function (){
-  $("#overlay").hide("#overlay");
-  $("#action").hide("#action");
-  $("#intro").show("#intro");
-});
+// // add on click event to reset the game // 
+// $("#restart").click(function (){
+//   $("#overlay").hide("#overlay");
+//   $("#action").hide("#action");
+//   $("#intro").show("#intro");
+// });
 
-var currentQuestion;
+var numOfQuestions = 8;
+var score = 0;
 
-//random question generator// 
-function getRandomQuestion (){
-  var random = Math.floor(Math.random()* questions.length);
-  return questions[random];
+// capture input//
+var q1 = $(".q1").click(function(){
+        alert($(this).val());
+})
 
-} 
+var q2 = $(".q2").click(function(){
+        alert($(this).val());
+})
 
-//Get answers from the the question variable questions.answer//
-function getAnswers(questions) {
-  var answers = [];
-  answers.push(questions.answer);
-}
+var q3 = $(".q3").click(function(){
+        alert($(this).val());
+})
+
+var q4 = $(".q4").click(function(){
+  alert($(this).val());
+})
+
+var q5 = $(".q5").click(function(){
+  alert($(this).val());
+})
+
+var q6 = $(".q6").click(function(){
+  alert($(this).val());
+})
+
+var q7 = $(".q7").click(function(){
+  alert($(this).val());
+})
+
+var q8 = $(".q8").click(function(){
+  alert($(this).val());
+})
+

@@ -1,49 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <title>Trivia Game</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <title>Trivia Game</title>
+    </head>
+    <body>
         <div id="overlay">
             <div id="overlayText">
                 <h2>TIME IS UP</h2>
-                    <abutton id="restart" class="btn btn-primary btn-lg">RE-START</button>
+                <button id="restart" class="btn btn-primary btn-lg">RE-START</button>
             </div>
         </div>
-       <div class="jumbotron" id="intro">
-           <h1 class="display-3">TRIVIA TRIVIA</h1>
-              <p class="lead">Find out how much you know about AR-15</p>
-           <hr class="my-4">
-              <p>You have 1 minutes to answear 8 questions</p>
-              <p>Click the "Start" button to begin</p>
-               <p class="lead">
-                 <abutton id="start" class="btn btn-primary btn-lg" href="#" >START</button>
-        </p>
-    </div>
-    
-    <div id="action">
+        <div class="jumbotron" id="intro">
+            <h1 class="display-3">TRIVIA TRIVIA</h1>
+            <p class="lead">Find out how much you know about AR-15</p>
+            <hr class="my-4">
+            <p>You have 1 minutes to answear 8 questions</p>
+            <p>Click the "Start" button to begin</p>
+            <p class="lead">
+                <button id="start" class="btn btn-primary btn-lg" >START</button>
+            </p>
+        </div>
 
-        <div  id="question">
-            <h2>Question here</h2>
-            </div>
-        
-            <div class="options">
-                <button id="btn1"><span id="option1">random</span></button>
-                <button id="btn2"><span id="option2">random</span></button>
-                <button id="btn3"><span id="option3">random</span></button>
-                <button id="btn4"><span id="option4">random</span></button>
-            </div>
+        <section id="action">
+            <form id="quiz">
+                <h2>1. What was the first branch of the military to 
+                    officially purchase AR-15-type rifles?</h2>
+                <button class="q1" value="a" id="btn1">√Air Force</button><br>
+                <button class="q1" value="b" id="btn2">Army</button><br>
+                <button class="q1" value="c" id="btn3">Navy</button><br>
+                <button class="q1" value="d" id="btn4">Marines</button><br>
 
-    </div>
- 
-</body>
+                <h2>2. Using a silencer on an AR-15 rifle will change
+                     your bullet’s point of impact which way?</h2>
+                <button class="q2" value="a" id="btn1">To the left and upward</button><br>
+                <button class="q2" value="b" id="btn2">To the left and downward</button><br>
+                <button class="q2" value="c" id="btn3">Downward</button><br>
+                <button class="q2" value="d" id="btn4">√Randomly or perhaps not at all</button><br>
+
+                <h2>3. If subsonic, 55-grain loads are fired from a 
+                    16-inch rifle barrel, the AR-15’s muzzle energy 
+                    goes from approximately 1280 ft.lbs. to what?</h2>
+                <button class="q3" value="a" id="btn1">1000</button><br>
+                <button class="q3" value="b" id="btn2">500</button><br>
+                <button class="q3" value="c" id="btn3">√125</button><br>
+                <button class="q3" value="d" id="btn4">There is no change in muzzle energy</button><br>
+
+                <h2>4.AR, as in AR-15, stands for? </h2>
+                <button class="q4" value="a" id="btn1">Eugene ARnold Stone</button><br>
+                <button class="q4" value="b" id="btn2">√ArmaLite Rifle</button><br>
+                <button class="q4" value="c" id="btn3">Assault Rifle</button><br>
+                <button class="q4" value="d" id="btn4">none of the above</button><br>
+
+                <h2>5. Approximately how many ft.-lbs. of recoil energy
+                     does a standard-velocity, .223 Rem/5.56 NATO cartridge 
+                     loaded with a 55-grain bullet produce in a typical, 7-pound AR-15 rifle?</h2>
+                <button class="q5" value="a" id="btn1">17.5</button><br>
+                <button class="q5" value="b" id="btn2">√3.7</button><br>
+                <button class="q5" value="c" id="btn3">8.1</button><br>
+                <button class="q5" value="d" id="btn4">.75</button><br>
+
+                <h2>6. The National Shooting Sports Foundation estimates 
+                    there are how many “Modern Sporting Arms (AR-15-style rifles) 
+                    in the U.S. today?</h2>
+                <button class="q6" value="a" id="btn1">Fewer than 1 million</button><br>
+                <button class="q6" value="b" id="btn2">300 million</button><br>
+                <button class="q6" value="c" id="btn3">√5 million to 9 million</button><br>
+                <button class="q6" value="d" id="btn4">25-35 million</button><br>
+
+                <h2>7. An M4 carbine differs from the military’s M16 rifle, 
+                    which was adapted from the AR-15, in what way?</h2>
+                <button class="q7" value="a" id="btn1">It’s a fully automatic version</button><br>
+                <button class="q7" value="b" id="btn2">It’s chambered in .7.62 NATO</button><br>
+                <button class="q7" value="c" id="btn3">√It’s shorter and lighter</button><br>
+                <button class="q7" value="d" id="btn4">It’s the exact same rifle, just coded differently by various military branches</button><br>
+
+                <h2>8. Which of the following rifles is NOT an AR-15-style rifle?</h2>
+                <button class="q8" value="a" id="btn1">√Keltec RDB</button><br>
+                <button class="q8" value="b" id="btn2">Rock River LAR 15</button><br>
+                <button class="q8" value="c" id="btn3">Daniel Defense MK 18</button><br>
+                <button class="q8" value="d" id="btn4">Yankee Hill Machine 8550 Specter</button><br>
+                  
+            </form>
+            <div id="score"></div>
+        </section>
+    </body>
 
 </html>
 <script src="assets/javascript/questions.js"></script>
 <script src="assets/javascript/app.js"></script>
+
+
+
+            
+            <!-- <div id="question">
+                <h2>Question here</h2>
+            </div>
+
+            <div class="options">
+                <button id="btn1">
+                    <span id="option1">random</span></button>
+                <button id="btn2">
+                    <span id="option2">random</span></button>
+                <button id="btn3">
+                    <span id="option3">random</span></button>
+                <button id="btn4">
+                    <span id="option4">random</span></button>
+            </div> -->
