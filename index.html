@@ -17,14 +17,28 @@
         <div id="overlay">
             <div id="overlayText">
                 <h2>TIME IS UP</h2>
+                <div>
+                        <h3>You answered</h3>
+                         <div><span id="score" >0</span></div>
+                         <h3>of 8 question correctly</h3>
+                         
+                </div>
                 <button id="restart" class="btn btn-primary btn-lg">RE-START</button>
+                <button id="solution" class="btn btn-primary btn-lg">Solution</button>
+                <div id="solutionTable">
+                        <table >
+                            <h4>Correct answears</h4>
+                            <tr><h5>1.A - 2.D - 3.C - 4.B</h5></tr>
+                            <tr><h5>5.B - 6.C - 7.C - 8.A</h5></tr>
+                        </table>
+                    </div>
             </div>
         </div>
         <div class="jumbotron" id="intro">
             <h1 class="display-3">TRIVIA TRIVIA</h1>
             <p class="lead">Find out how much you know about AR-15</p>
             <hr class="my-4">
-            <p>You have 1 minutes to answear 8 questions</p>
+            <p>You have 2 minutes to answear 8 questions</p>
             <p>Click the "Start" button to begin</p>
             <p class="lead">
                 <button id="start" class="btn btn-primary btn-lg" >START</button>
@@ -91,28 +105,13 @@
                 <button class="q8"  id="btn4">Yankee Hill Machine 8550 Specter</button><br>
                   
             </form>
-            <div id="score"><span>Your Score:</span></div>
+            <button id="submit">Submit</button>
+            
         </section>
+
+        
     </body>
 
 </html>
-<!-- <script src="assets/javascript/questions.js"></script> -->
 <script src="assets/javascript/app.js"></script>
 
-
-
-            
-            <!-- <div id="question">
-                <h2>Question here</h2>
-            </div>
-
-            <div class="options">
-                <button id="btn1">
-                    <span id="option1">random</span></button>
-                <button id="btn2">
-                    <span id="option2">random</span></button>
-                <button id="btn3">
-                    <span id="option3">random</span></button>
-                <button id="btn4">
-                    <span id="option4">random</span></button>
-            </div> -->
