@@ -1,7 +1,8 @@
 body{
   padding: 40px;
     text-align: center;
-    background: url("../images/plate.png")fixed;
+    background: url("../images/plate2.jpg")no-repeat center center fixed;
+    background-size: cover;
 }
 
 .jumbotron {
@@ -105,12 +106,14 @@ justify-content: center;
   width:60%;
   height: 60%;
   border: 1px solid whitesmoke;
+  border-radius: 10px;
   padding: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   font-size: 50px;
   color: white;
+  box-shadow: 10px 10px 90px darkgray;
   background-color: black;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
@@ -132,7 +135,10 @@ justify-content: center;
 }
 
 #solutionTable {
-  background-color: antiquewhite;
+  background: linear-gradient(to bottom right, rgb(116, 167, 189), rgb(28, 52, 94));
+  box-shadow: 10px 10px 20px black;
+  border: 1px solid black;
+  border-radius: 10px;
   color: black;
   width: 50%;
   padding: 10px;
