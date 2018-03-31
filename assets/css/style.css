@@ -21,14 +21,32 @@ body{
   color: whitesmoke;
 }
 
-#question {
-  margin: 100px;
-  border: 2px solid lightgray;
-  border-radius: 10px;
-  background-color: gray;
-  height: 200px;
-  text-align: center;
-  padding: 30px;
+#timer {
+  position:fixed;
+  display: none;
+  background-color: aliceblue;
+  width: 10%;
+  color:darkred;
+  font-size: 30;
+  padding: 10px;
+  margin: 20px;
+  bottom: 0;
+  right: 0;
+  
+}
+
+h2{
+  background-color: black;
+  border: 1px solid lightgrey;
+  border-radius:10px; 
+}
+.question{
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius:10px; 
+  margin: 20px;
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
 }
 
 input {
@@ -47,7 +65,8 @@ input {
   margin: 20px;
   background-color: gray;
   border: 2px solid lightgrey;
-  border-radius: 10px
+  border-radius: 10px;
+  color: antiquewhite;
 }
 
 #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
@@ -57,6 +76,7 @@ input {
 
 #btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {
   outline: 0;
+  background-color: lightgrey;
 }
 
 #score{
@@ -76,14 +96,14 @@ justify-content: center;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); 
+  background-color: rgba(0, 0, 0, 0.8); 
   z-index: 2; 
   cursor: pointer; 
 }
 
 #overlayText {
-  width:50%;
-  height: 50%;
+  width:60%;
+  height: 60%;
   border: 1px solid whitesmoke;
   padding: 30px;
   position: absolute;
@@ -97,10 +117,9 @@ justify-content: center;
 }
 
 #submit {
-  border: 1px solid gray;
+  border: 2px solid gray;
   border-radius: 10px;
   width: 10%;
-  background-color: dimgrey;
   padding: 10px;
 }
 
