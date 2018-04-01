@@ -9,13 +9,13 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        <title>Trivia Game</title>
+        <title>AR15 Trivia</title>
     </head>
     <body>
-            <div id="timer" placeholder="000">00:00</div>
+            <div id="timer">120</div>
         <div id="overlay">
             <div id="overlayText">
-                <h2>TIME IS UP</h2>
+                <h2 id="overLayTitle"></h2>
                 <div>
                         <h3>You answered</h3>
                          <div><span id="score" >0</span></div>
@@ -26,7 +26,7 @@
                 <button id="solution" class="btn btn-primary btn-lg">Solution</button>
                 <div id="solutionTable">
                         <table >
-                            <h4>Correct answears</h4>
+                            <h4>Correct answers</h4>
                             <tr><h5>1.A - 2.D - 3.C - 4.B</h5></tr>
                             <tr><h5>5.B - 6.C - 7.C - 8.A</h5></tr>
                         </table>
@@ -34,10 +34,10 @@
             </div>
         </div>
         <div class="jumbotron" id="intro">
-            <h1 class="display-3">TRIVIA TRIVIA</h1>
+            <h1 class="display-3">AR15 TRIVIA</h1>
             <p class="lead">Find out how much you know about AR-15</p>
             <hr class="my-4">
-            <p>You have 2 minutes to answear 8 questions</p>
+            <p>You have 2 minutes to answer 8 questions</p>
             <p>Click the "Start" button to begin</p>
             <p class="lead">
                 <button id="start" class="btn btn-primary btn-lg" >START</button>
@@ -47,7 +47,7 @@
         <section id="action">
                 
             <form id="quiz">
-                <div class="question">
+                <div id="question1" class="question">
                 <h2>Q1. What was the first branch of the military to 
                     officially purchase AR-15-type rifles?</h2>
                 <button class="q1" value="true" id="btn1">A. Air Force</button><br>
@@ -56,7 +56,7 @@
                 <button class="q1"  id="btn4">D. Marines</button><br>
                 </div>
 
-                <div class="question">
+                <div id="question2" class="question">
                 <h2>Q2. Using a silencer on an AR-15 rifle will change
                      your bullet’s point of impact which way?</h2>
                 <button class="q2"  id="btn1">A. To the left and upward</button><br>
@@ -65,7 +65,7 @@
                 <button class="q2" value="true" id="btn4">D. Randomly or perhaps not at all</button><br>
                 </div>
 
-                <div class="question">
+                <div id="question3" class="question">
                 <h2>Q3. If subsonic, 55-grain loads are fired from a 
                     16-inch rifle barrel, the AR-15’s muzzle energy 
                     goes from approximately 1280 ft.lbs. to what?</h2>
@@ -75,7 +75,7 @@
                 <button class="q3"  id="btn4">D. There is no change in muzzle energy</button><br>
                 </div>
 
-                <div class="question">
+                <div id="question4" class="question">
                 <h2>Q4. AR, as in AR-15, stands for? </h2>
                 <button class="q4"  id="btn1">A. Eugene ARnold Stone</button><br>
                 <button class="q4" value="true" id="btn2">B. ArmaLite Rifle</button><br>
@@ -83,7 +83,7 @@
                 <button class="q4"  id="btn4">D. none of the above</button><br>
                 </div>
 
-                <div class="question">
+                <div id="question5" class="question">
                 <h2>Q5. Approximately how many ft.-lbs. of recoil energy
                      does a standard-velocity, .223 Rem/5.56 NATO cartridge 
                      loaded with a 55-grain bullet produce in a typical, 7-pound AR-15 rifle?</h2>
@@ -93,7 +93,7 @@
                 <button class="q5"  id="btn4">D. .75</button><br>
                 </div>
 
-                <div class="question">
+                <div id="question6" class="question">
                 <h2>Q6. The National Shooting Sports Foundation estimates 
                     there are how many “Modern Sporting Arms (AR-15-style rifles) 
                     in the U.S. today?</h2>
@@ -103,7 +103,7 @@
                 <button class="q6"  id="btn4">D. 25-35 million</button><br>
                 </div>
 
-                <div class="question">
+                <div id="question7" class="question">
                 <h2>Q7. An M4 carbine differs from the military’s M16 rifle, 
                     which was adapted from the AR-15, in what way?</h2>
                 <button class="q7"  id="btn1">A. It’s a fully automatic version</button><br>
@@ -113,7 +113,7 @@
                     by various military branches</button><br>
                 </div>
 
-                <div class="question">
+                <div id="question18" class="question">
                 <h2>Q8. Which of the following rifles is NOT an AR-15-style rifle?</h2>
                 <button class="q8" value="true" id="btn1">A. Keltec RDB</button><br>
                 <button class="q8"  id="btn2">B. Rock River LAR 15</button><br>
